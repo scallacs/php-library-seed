@@ -1,0 +1,33 @@
+{
+    "name": "scallacs/php-library-seed",
+    "type": "library",
+    "description": "This is PHP library starter for bootstrapping new packages with preconfigured testing, code coverage, profiling and travis integration",
+    "keywords": ["library", "php", "seed", "starter"],
+    "homepage": "http://github.com/scallacs/php-library-seed",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stéphane Léonard",
+            "homepage": "https://github.com/scallacs"
+        }
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "cover": "vendor/bin/phpunit"
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpLibrarySeed\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpLibrarySeed\\Tests\\": "tests/",
+            "ArrayConverter\\Examples\\": "examples/"
+        }
+    }
+}
