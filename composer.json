@@ -25,6 +25,9 @@
         }
     },
     "autoload-dev": {
+        "files": [
+
+        ],
         "psr-4": {
             "PhpLibrarySeed\\Tests\\": "tests/",
             "ArrayConverter\\Examples\\": "examples/"
